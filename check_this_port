@@ -1,7 +1,0 @@
-watch -d -n 1 "us -mT -Iv 192.168.0.1:a -r 3000"
-
-Untersucht alle Ports von 192.168.0.1 in jeder Sekunde
-
-watch -d -n 1 "us -mT -Iv 192.168.0.1:443 -r 3000"
-
-Untersucht Port 443 einmal die Sekunde
