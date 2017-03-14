@@ -1,7 +1,7 @@
 watch -d -n 1 "us -mT -Iv 192.168.0.1:a -r 3000"
 
-checks all ports of 192.168.0.1 every second
+checking all ports of 192.168.0.1 every second
 
 watch -d -n 1 "us -mT -Iv 192.168.0.1:443 -r 3000"
 
-checks port 443 every second
+checking port 443 every second
