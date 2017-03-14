@@ -1,0 +1,41 @@
+LESUNG 1:
+
+Datensicherheit | data security | logisch, mathematisch
+Datenschutz     | data privacy  | rechtlich, gesetzlich
+Datensicherung  | data saftey   | physikalisch
+
+Personenbezogene Daten -> Daten die man einer Person zuordnen kann
+  keine harte Grenze: Wenn man durch indirekte Daten soweit ausschließen kann,
+  dass Person erkannt wird ist Grenze erreicht.
+
+informationelle Selbstbestimmung bzgl Daten und deren
+  Speicherung
+  Weitergabe
+  Verarbeitung
+  
+ nicht zu verbergen? -> gesellschatliche Stigamta? -> Selbstschuutz
+  oder Selbstzensur
+  
+ Datensicherheit
+ 
+ ASCII
+ 
+ D: und B: = { 0000 0000 }
+               0000 0001
+               .... ....
+               1111 1111
+ 
+ Kardinalität: 
+ 
+ |D| = 256 auf |B| = 2^8 = 256
+ 
+ Verschlüßelung "muss" bijektiv sein:
+
+  injektiv -> jeder Wert in D hat maximal ein B/ kein Wert in D "darf zwei B haben" 
+  (Eselsbrücke: Kein Hase wird mehrfach getroffen bzw. jeder Jäger hat seinen eigenen Hasen.)
+  && 
+  surjektiv -> alle D haben ein B
+  (Eselsbrücke: Alle Hasen sind tot.)
+  =
+  bijektiv
+  (Eselsbrücke: Jeder Jäger hat genau einen Hasen und dadurch wurden alle Hasen erwischt.)
