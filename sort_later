@@ -11,6 +11,7 @@ getting root when have sudo:
   
 example JtR
 sudo ./john /tmp/password --session=neu --format=raw-md5 --wordlist=/usr/share/wordlist/example.dic –rules
+sudo ./john /tmp/passwd --wordlist=/home/ich/bin/SecLists-master/Passwords/10_million_password_list_top_100000.txt -rules
 
 WFuzz
 sudo python wfuzz.py -c -z file,wordlist/general/big.txt --hc 404 http://vuln/FUZZ
