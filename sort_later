@@ -64,3 +64,11 @@ CUPP um pernsonalisierte Passwortlisten zu erstellen
 git clone https://github.com/Mebus/cupp.git
 python cupp.py -i
 
+wget -r --no-parent http://192.168.2.101/~root/
+
+cat /etc/sudoers 
+sudo -l
+
+
+
+
